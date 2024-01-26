@@ -16,3 +16,7 @@
 Db folder
 
 db/
+
+## Environment variables
+
+.env

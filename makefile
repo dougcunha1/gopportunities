@@ -11,6 +11,7 @@ run-with-docs:
 	@swag init
 	@go run main.go
 build:
+	@swag init
 	@go build -o $(APP_NAME) main.go
 test:
 	@go test ./...

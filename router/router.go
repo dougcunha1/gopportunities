@@ -4,6 +4,8 @@ package router
 import "github.com/gin-gonic/gin"
 
 func Initialize() {
+	// Change debug mode to release mode
+	gin.SetMode(gin.ReleaseMode)
 	// Initialize router
 	router := gin.Default()
 
