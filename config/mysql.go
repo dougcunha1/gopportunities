@@ -80,6 +80,7 @@ func (c *DBConfig) DSN() string {
 }
 
 func InitializeMySQL() (*gorm.DB, error) {
+	// Initialize logger for mysql
 	logger := GetLogger("mysql")
 	// Load .env key/value pairs
 	err := godotenv.Load()
